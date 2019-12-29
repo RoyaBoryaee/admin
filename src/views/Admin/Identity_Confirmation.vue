@@ -15,7 +15,7 @@
                   <p >Name</p>
                 </td>
                 <td>
-                  <span class="h3">$routes.params.name</span>
+                  <span class="h3">$</span>
                 </td>
               </tr>
               <tr>
@@ -23,7 +23,7 @@
                   <p>Email</p>
                 </td>
                 <td>
-                  <span class="h3">$routes.params.email</span>
+                  <span class="h3">$</span>
                 </td>
               </tr>
               <tr>
@@ -31,7 +31,7 @@
                   <p>Phone Number</p>
                 </td>
                 <td>
-                  <span class="h3">$routes.params.phonenumber</span>
+                  <span class="h3">$</span>
                 </td>
               </tr>
               <tr>
@@ -39,7 +39,7 @@
                   <p>Locatino</p>
                 </td>
                 <td>
-                  <span class="h3">$routes.params.location</span>
+                  <span class="h3">$</span>
                 </td>
               </tr>
               <tr>
@@ -47,7 +47,7 @@
                   <p>Activity field</p>
                 </td>
                 <td>
-                  <span class="h3">$routes.params.zctivityfield</span>
+                  <span class="h3">$r</span>
                 </td>
               </tr>
               <tr>
@@ -55,7 +55,7 @@
                   <p>activityDescription</p>
                 </td>
                 <td>
-                  <span class="h3">h3. Bootstrap heading</span>
+                  <span class="h3">$</span>
                 </td>
               </tr>
             </tbody>
@@ -82,22 +82,11 @@ export default {
   data() {
     return {
       show: true,
-      id:this.$routes.params.id,
-      blog: {}
+
     };
   },
-  created() {
-    this.$http.get(" " + this.id).then(function(data) {
-      console.log(data);
-      this.blog = data.body;
-    });
-  },
-  methods:{
-    Approve(){
-     this.blog.approved=true;
-     //post
-    }
-  }
+
+ 
 };
 </script>
 
