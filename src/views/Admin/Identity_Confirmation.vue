@@ -2,67 +2,55 @@
   <div class="animated fadeIn">
     <b-row>
       <b-col>
-        <b-card header="Card title" border-variant="primary" class="bg-gray-100"  col-md-4 style="width:80%; margin-left:auto;margin-right:auto;">
-          <img style="float:left; width:150px; height:150px;" src="img/avatars/7.jpg" class="img-rounded" alt="Cinque Terre" />
-
+        <b-card
+          header="مشخصات فروشنده"
+          border-variant="primary"
+          class="bg-gray-100"
+          col-md-4
+          style="width:80%; margin-left:auto;margin-right:auto;direction:rtl"
+        >
           <table
-            class="table bg-white"
-            style="width:70%;margin-left:auto;margin-right:auto;direction:ltr"
+            class="table table-bordered table-dark"
+            style="width:70%;margin-left:50px;direction:ltr;float:left"
           >
             <tbody>
               <tr>
-                <td>
-                  <p >Name</p>
-                </td>
-                <td>
-                  <span class="h3">$</span>
-                </td>
+                <td class="col-3" align="right"><span class="h3">$</span></td>
+                <td class="col-6" align="right"><p >نام</p></td>
               </tr>
               <tr>
-                <td>
-                  <p>Email</p>
-                </td>
-                <td>
-                  <span class="h3">$</span>
-                </td>
+                <td class="col-6" align="right"> <span class="h3">$</span>
+</td>
+                <td class="col-3" align="right"><p>ایمیل</p></td>
+              </tr>
+                            <tr>
+                <td class="col-6" align="right"><span class="h3">$</span></td>
+                <td class="col-3" align="right"> <p>تلفن همراه</p></td>
               </tr>
               <tr>
-                <td>
-                  <p>Phone Number</p>
-                </td>
-                <td>
-                  <span class="h3">$</span>
-                </td>
+                <td class="col-6" align="right"> <span class="h3">$</span></td>
+                <td class="col-3" align="right"><p>موقعیت</p></td>
+              </tr>
+                            <tr>
+                <td class="col-6" align="right"><span class="h3">$r</span></td>
+                <td class="col-3" align="right"><p>زمینه فعالیت</p></td>
               </tr>
               <tr>
-                <td>
-                  <p>Locatino</p>
-                </td>
-                <td>
-                  <span class="h3">$</span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>Activity field</p>
-                </td>
-                <td>
-                  <span class="h3">$r</span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>activityDescription</p>
-                </td>
-                <td>
-                  <span class="h3">$</span>
-                </td>
+                <td class="col-6" align="right"><span class="h3">$</span></td>
+                <td class="col-3" align="right"><p>توضیح فعالیت</p></td>
               </tr>
             </tbody>
           </table>
+          <img
+            style=" width:150px; height:150px; float:right; margin-right:30px"
+            src="img/avatars/7.jpg"
+            class="img-rounded"
+            alt="Cinque Terre"
+          />
           <div class="clearfix"></div>
+
           <b-col>
-            <b-button v-click="Approve" variant="primary" class="px-4">Approve</b-button>
+            <b-button v-click="Approve" variant="primary" class="px-4">تایید</b-button>
           </b-col>
         </b-card>
       </b-col>
@@ -81,12 +69,9 @@ export default {
   },
   data() {
     return {
-      show: true,
-
+      show: true
     };
-  },
-
- 
+  }
 };
 </script>
 
