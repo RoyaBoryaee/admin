@@ -5,39 +5,39 @@
         <b-card
           header="مشخصات فروشنده"
           border-variant="primary"
-          class="bg-gray-100"
+          class="bg-gray-100 text-center"
           col-md-4
           style="width:80%; margin-left:auto;margin-right:auto;direction:rtl"
         >
           <table
-            class="table table-bordered table-dark"
+            class="table table-bordered bg-white"
             style="width:70%;margin-left:50px;direction:ltr;float:left"
           >
             <tbody>
               <tr>
-                <td class="col-3" align="right"><span class="h3">$</span></td>
-                <td class="col-6" align="right"><p >نام</p></td>
+                <td class="col-6" align="right">$</td>
+                <td class="col-2" align="right">نام</td>
               </tr>
-              <tr>
-                <td class="col-6" align="right"> <span class="h3">$</span>
-</td>
-                <td class="col-3" align="right"><p>ایمیل</p></td>
-              </tr>
-                            <tr>
-                <td class="col-6" align="right"><span class="h3">$</span></td>
-                <td class="col-3" align="right"> <p>تلفن همراه</p></td>
-              </tr>
-              <tr>
-                <td class="col-6" align="right"> <span class="h3">$</span></td>
-                <td class="col-3" align="right"><p>موقعیت</p></td>
+         
+                              <tr>
+                <td class="col-6" align="right">$</td>
+                <td class="col-2" align="right">ایمیل</td>
               </tr>
                             <tr>
-                <td class="col-6" align="right"><span class="h3">$r</span></td>
-                <td class="col-3" align="right"><p>زمینه فعالیت</p></td>
+                <td class="col-6" align="right">$</td>
+                <td class="col-2" align="right">تلفن همراه</td>
               </tr>
-              <tr>
-                <td class="col-6" align="right"><span class="h3">$</span></td>
-                <td class="col-3" align="right"><p>توضیح فعالیت</p></td>
+                            <tr>
+                <td class="col-6" align="right">$</td>
+                <td class="col-2" align="right">موقعیت</td>
+              </tr>
+                            <tr>
+                <td class="col-6" align="right">$</td>
+                <td class="col-2" align="right">زمینه فعالیت</td>
+              </tr>
+                            <tr>
+                <td class="col-6" align="right">$</td>
+                <td class="col-2" align="right">توضیح فعالیت</td>
               </tr>
             </tbody>
           </table>
@@ -50,7 +50,7 @@
           <div class="clearfix"></div>
 
           <b-col>
-            <b-button v-click="Approve" variant="primary" class="px-4">تایید</b-button>
+            <b-button v-click="Approve" variant="primary" class="px-4 float-left">تایید</b-button>
           </b-col>
         </b-card>
       </b-col>
