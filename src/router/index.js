@@ -75,18 +75,16 @@ export default new Router({
       name: 'Home',
       component: DefaultContainer,
       children: [
-        
         {
-          path: '/Admin/Seller_Identity',
+          path: '/Admin/Seller_Identity/:userName',
           name: 'تایید هویت فروشنده ',
           component: Seller_Identity
         },
         {
-          path: '/Admin/Seller_Account',
+          path: '/Admin/Seller_Account/:userName',
           name: 'لغو حساب کاربری فروشنده ',
           component: Seller_Account
         },
-        
         {
           path: 'dashboard',
           name: 'Dashboard',
@@ -316,7 +314,7 @@ export default new Router({
             }
           ]
         },
-        
+
         {
           path: '/newchart',
           name: 'newchart',
