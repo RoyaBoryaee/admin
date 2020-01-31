@@ -78,7 +78,7 @@
       goToApprove(username) {
         this.$router.push(
           {
-            name: 'لغو حساب کاربری فروشنده ',
+            name: 'تایید هویت فروشنده ',
             params: {userName: username}
           }
         )
@@ -86,7 +86,7 @@
       goToSuspend(username) {
         this.$router.push(
           {
-            name: 'تایید هویت فروشنده ',
+              name: 'لغو حساب کاربری فروشنده ',
             params: {userName: username}
           }
         )
